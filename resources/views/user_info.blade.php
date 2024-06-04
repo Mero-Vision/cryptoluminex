@@ -15,7 +15,7 @@
         </div>
     </div> --}}
     <!-- /preload -->
-   
+
 
 
     <div class="header-style2 fixed-top bg-menuDark">
@@ -25,7 +25,7 @@
 
     <div class="header fixed-top bg-surface d-flex justify-content-center align-items-center">
         <a href="#" class="left back-btn"><i class="icon-left-btn"></i></a>
-        <a href="{{url('/')}}" class="right"><i class="icon-home2 fs-20"></i></a>
+        <a href="{{ url('/') }}" class="right"><i class="icon-home2 fs-20"></i></a>
         {{-- <a href="qr-code.html" class="right text-secondary"><i class="icon-barcode"></i></a> --}}
     </div>
     <div class="pt-45 pb-16">
@@ -37,19 +37,17 @@
                     <div class="info">
                         <h5>{{ Auth()->user()->name }}</h5>
                         <p class="text-small text-secondary mt-8 mb-8">Profile and settings</p>
-                        <span class="tag-xs style-2 round-2 red text-light">
-
-                            @if ($verifyEmail->verification_status == 'unverified')
-                                <label class="avatar-label" style="color: white;">
-                                    Unverified
-                                    <i class="bi bi-patch-question-fill"></i>
-                                </label>
-                            @else
-                                <label class="avatar-label text-light" style="color: white;">
-                                    Verified <i class='bx bxs-badge-check'></i>
-                                </label>
-                            @endif
-                        </span>
+                        @if ($verifyEmail->verification_status == 'unverified')
+                            <span class="avatar-label tag-xs style-2 round-2 red text-light" style="color: white;">
+                               Unverified
+                                <i class="bi bi-patch-question-fill"></i>
+                            </span>
+                        @else
+                            <span class="avatar-label tag-xs style-2 round-2 bg-success text-light"
+                                style="color: white;">
+                                Verified <i class='bx bxs-badge-check'></i>
+                            </span>
+                        @endif
 
                     </div>
                 </div>
@@ -92,16 +90,16 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('trade-history')}}"
+                        <a href="{{ url('trade-history') }}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
                             <i class="icon icon-metalogo"></i>
                             Trade History
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('withdraw-history')}}"
+                        <a href="{{ url('withdraw-history') }}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
-                           <i class="bi bi-clock-history bx-sm"></i>
+                            <i class="bi bi-clock-history bx-sm"></i>
                             Withdraw History
                         </a>
                     </li>
@@ -109,18 +107,18 @@
                     <li class="mt-3">
                         <a href="#"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
-                           <i class="bi bi-file-earmark-text bx-sm"></i>
-                           Verify Document
+                            <i class="bi bi-file-earmark-text bx-sm"></i>
+                            Verify Document
                         </a>
                     </li>
-                    <li class="mt-3">
+                    {{-- <li class="mt-3">
                         <a href="{{url('change-password')}}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
                            <i class="bi bi-backpack2 bx-sm"></i>
                             Change Password
                         </a>
-                    </li>
-                    
+                    </li> --}}
+
                 </ul>
             </div>
         </div>
@@ -130,7 +128,7 @@
                 <ul class="mt-16 grid-3 gap-12">
                     <li>
                         <a href="{{ url('about') }}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
-                           <i class="bi bi-file-earmark-person-fill bx-sm"></i>
+                            <i class="bi bi-file-earmark-person-fill bx-sm"></i>
                             About Us
                         </a>
                     </li>
@@ -178,7 +176,8 @@
                                 </a>
                             </li>
                             <li class="mt-16">
-                                <a href="https://my.mercuryo.io/login/email" target="_blank" class="coin-item style-2 gap-12">
+                                <a href="https://my.mercuryo.io/login/email" target="_blank"
+                                    class="coin-item style-2 gap-12">
                                     <img src="{{ url('assets/img/buy/mercuryo.png') }}" alt="img" class="img">
                                     <div class="content">
                                         <div class="title">
@@ -203,7 +202,8 @@
                             </li>
                             <li class="mt-16">
                                 <a href="https://buy.simplex.com/" target="_blank" class="coin-item style-2 gap-12">
-                                    <img src="{{ url('assets/img/buy/simplex.png') }}" alt="img" class="img">
+                                    <img src="{{ url('assets/img/buy/simplex.png') }}" alt="img"
+                                        class="img">
                                     <div class="content">
                                         <div class="title">
                                             <p class="mb-4 text-large">Simplex Wallet</p>
@@ -214,8 +214,10 @@
                                 </a>
                             </li>
                             <li class="mt-16">
-                                <a href="https://www.moonpay.com/en-gb/buy?source=homepage" target="_blank" class="coin-item style-2 gap-12">
-                                    <img src="{{ url('assets/img/buy/moonpay.png') }}" alt="img" class="img">
+                                <a href="https://www.moonpay.com/en-gb/buy?source=homepage" target="_blank"
+                                    class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/moonpay.png') }}" alt="img"
+                                        class="img">
                                     <div class="content">
                                         <div class="title">
                                             <p class="mb-4 text-large">MoonPay Wallet</p>
@@ -237,7 +239,7 @@
                                     </div>
                                 </a>
                             </li>
-                            
+
                         </ul>
 
                     </div>

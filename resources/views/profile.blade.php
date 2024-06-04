@@ -31,19 +31,19 @@
             <a href="" class="mt-16 d-flex justify-content-between align-items-center">
                 <div class="box-left">
                     <h5 class="mb-8">Verification</h5>
-                    <span class="tag-xs style-2 round-2 red text-light">
+                   
 
                         @if ($verifyEmail->verification_status == 'unverified')
-                            <label class="avatar-label" style="color: white;">
-                                Unverified
+                            <a href="{{url('user-info/profile/verify-document')}}" class="avatar-label tag-xs style-2 round-2 red text-light" style="color: white;">
+                                Veriy Now
                                 <i class="bi bi-patch-question-fill"></i>
-                            </label>
+                            </a>
                         @else
-                            <label class="avatar-label text-light" style="color: white;">
+                            <span class="avatar-label tag-xs style-2 round-2 bg-success text-light" style="color: white;">
                                 Verified <i class='bx bxs-badge-check'></i>
-                            </label>
+                            </span>
                         @endif
-                    </span>
+                    
                 </div>
                 {{-- <span class="icon-arr-right text-secondary fs-12"></span> --}}
             </a>
@@ -83,6 +83,12 @@
             <ul class="mt-16 pb-16 line-bt">
                 <li>
                     <h5>Setting</h5>
+                </li>
+                 <li>
+                    <a href="{{url('change-password')}}" class="mt-16 d-flex justify-content-between align-items-center">
+                        <p class="text-small">Change Password</p>
+                        <span class="icon-arr-right text-secondary fs-12"></span>
+                    </a>
                 </li>
                
                 <li>

@@ -24,7 +24,12 @@ class UserController extends Controller
     }
 
     public function storeVerificationImage(Request $request){
-
+        $request->validate([
+            'front_image'=>['required','image'],
+            'back_image'=>['required','image'],
+            'id_in_hand'=>['required','image']
+        ]);
+        
         $user=User::find(auth()->user()->id);
         if(!$user){
             return back()->with('error','User Record Not Found!');
@@ -40,7 +45,8 @@ class UserController extends Controller
                 
             });
             if($user){
-                return back()->with('success','Documents submitted successfully!');
+                sweetalert()->addSuccess('Verification Document Submitted Successfully! Please Wait For The Review!');
+                return back();
             }
             
         }
@@ -55,7 +61,7 @@ class UserController extends Controller
 
         
         
-        return view('my_verification_id');
+        return view('verify_document');
     }
 
     

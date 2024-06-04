@@ -46,6 +46,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/user-info', [UserController::class, 'userInfoIndex']);
     Route::get('user-info/deposit', [UserController::class, 'verifyDocument']);
     Route::get('user-info/profile', [ProfileController::class, 'index']);
+    Route::get('user-info/profile/verify-document', [UserController::class, 'viewVerificationImage']);
+    Route::post('user-info/profile/verify-document', [UserController::class, 'storeVerificationImage']);
+
+
 
     Route::get('/about', [AboutController::class, 'index']);
 
@@ -98,7 +102,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('withdraw-history', [WalletController::class, 'withdrawHistory']);
 
 
-    //     Route::post('profile/verify-document', [UserController::class, 'storeVerificationImage']);
 
 
     //     Route::get('crypto', [CryptoCurrencyController::class, 'index']);
