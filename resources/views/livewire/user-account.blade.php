@@ -51,8 +51,8 @@
                 <label class="custom-control-label" for="form-checkbox">
                     I agree to platform
                     <a href="{{ url('terms-conditions') }}" class="highlight-link">Terms and Conditions</a>
-                    and
-                    <a href="{{ url('privacy-policy') }}" class="highlight-link">Privacy Policy</a>
+                    {{-- and
+                    <a href="{{ url('privacy-policy') }}" class="highlight-link">Privacy Policy</a> --}}
                 </label>
             </div>
         </fieldset>

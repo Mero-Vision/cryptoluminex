@@ -32,7 +32,7 @@
         <div class="bg-menuDark tf-container">
 
 
-            <div class="container" style="font-family: 'Arial', sans-serif; height: 400px; overflow-y: auto;">
+            <div class="container" style="font-family: 'Arial', sans-serif; height: 430px; overflow-y: auto;">
                 <br>
                 <h4 class="text-light" style="font-size: 16px; font-weight: bold; margin-bottom: 20px; mt-3">Terms &
                     Conditions</h4>

@@ -91,12 +91,12 @@
                     </a>
                 </li>
                
-                <li>
+                {{-- <li>
                     <a href="#" class="mt-16 d-flex justify-content-between align-items-center">
                         <p class="text-small">Privacy</p>
                         <span class="icon-arr-right text-secondary fs-12"></span>
                     </a>
-                </li>
+                </li> --}}
                  <li>
                     <a href="{{url('terms-conditions')}}" class="mt-16 d-flex justify-content-between align-items-center">
                         <p class="text-small">Terms and Conditions</p>
