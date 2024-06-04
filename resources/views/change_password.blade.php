@@ -44,14 +44,14 @@
                                 @enderror
                                 <br><br>
 
-                                <label class="mt-4 text-light">New Password</label>
+                                <label class="mt-3 text-light">New Password</label>
                                 <input type="text" class="clear-ip value_input ip-style2 mt-1" name="new_password"
                                     placeholder="Enter new password" />
                                 @error('new_password')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                                 <br>
-                                <label class="mt-4 text-light">Confirm Password</label>
+                                <label class="mt-3 text-light">Confirm Password</label>
                                 <input type="text" class="clear-ip value_input ip-style2 mt-1" name="confirm_password"
                                     placeholder="Enter confirm password" />
                                 @error('confirm_password')
