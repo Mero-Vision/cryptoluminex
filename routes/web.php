@@ -90,6 +90,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('wallet/convert/eth', [ETHController::class, 'convertETHIndex']);
     Route::post('wallet/convert/eth', [ETHController::class, 'convertETH']);
 
+    Route::get('send-wallet', [WalletController::class, 'sendwallet']);
+    Route::get('receive-wallet', [WalletController::class, 'receivewallet']);
+
 
     //     Route::get('wallet/withdraw-history',[WalletController::class, 'withdrawHistory']);
 
@@ -105,7 +108,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     //     Route::get('online-service',[OnlineServiceController::class,'index']);
 
-        Route::get('trade-history',[TradeTransactionController::class, 'tradeHistory']);
+    Route::get('trade-history', [TradeTransactionController::class, 'tradeHistory']);
 
     //     Route::get('my-verification-id',[UserController::class, 'viewVerificationImage']);
 

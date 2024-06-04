@@ -33,7 +33,7 @@
                 <h1 class="mt-16"><a href="#">${{ $clientBalance }}</a></h1>
                 <ul class="mt-16 grid-4 m--16">
                     <li>
-                        <a href=""
+                        <a href="{{url('send-wallet')}}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center">
                                 <i class="icon icon-way bx-sm"></i>
@@ -43,7 +43,7 @@
 
                     </li>
                     <li>
-                        <a href="{{url('wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                        <a href="{{url('receive-wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
                                     class="icon icon-way2 bx-sm"></i></span>
                             Receive
