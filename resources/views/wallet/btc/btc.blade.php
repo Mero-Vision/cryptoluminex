@@ -5,7 +5,7 @@
 <head>
     @include('layouts.header')
 
-    <title>Coin Luminexx</title>
+    <title>Crypto Luminexx</title>
 </head>
 
 <body>

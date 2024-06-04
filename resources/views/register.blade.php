@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="{{ url('assets/img/logo.png') }}" />
     <link rel="apple-touch-icon-precomposed" href="{{ url('assets/img/logo.png') }}" />
 
-    <title>Coin Luminexx | Register Account</title>
+    <title>Crypto Luminexx | Register Account</title>
 </head>
 
 <body>

@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="d-flex align-items-center gap-8">
-                <a href="{{url('login')}}"><i class="bi bi-box-arrow-in-right bx-sm"></i></a>
-                <a href="#notification" data-bs-toggle="modal"><i class="bi bi-bell bx-sm"></i></a>
+                <a href="{{url('logout')}}"><i class="bi bi-box-arrow-in-right bx-sm"></i></a>
+                {{-- <a href="#notification" data-bs-toggle="modal"><i class="bi bi-bell bx-sm"></i></a> --}}
             </div>
         </div>

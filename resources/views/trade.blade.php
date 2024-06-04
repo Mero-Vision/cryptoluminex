@@ -4,7 +4,7 @@
 <head>
     @include('layouts.header')
     <link href="//unpkg.com/layui@2.9.10/dist/css/layui.css" rel="stylesheet">
-    <title>Coin Luminexx</title>
+    <title>Crypto Luminexx</title>
 </head>
 
 <body>
