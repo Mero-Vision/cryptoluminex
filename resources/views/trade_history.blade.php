@@ -48,7 +48,13 @@
                                         </span>
                                     </p>
                                     {{-- <p class="text-end text-light">Coin:{{ $data->coin }}</p> --}}
-                                    <p class="text-end text-light">Time Spent: {{ $data->created_at->diffForHumans() }}
+                                    <p class="text-end text-light">
+                                        Status:
+                                        <span
+                                            class="@if ($data->trade_status == 'loss') badge bg-danger rounded text-light @elseif ($data->trade_status == 'profit') badge bg-success rounded text-light @endif">
+                                            {{ $data->trade_status }}
+                                        </span>
+                                    </p>
                                     </p>
                                 </div>
                             </div>
@@ -61,7 +67,7 @@
                 @empty
                 @endforelse
             </ul><br>
-            {{$finishedTrades->links('pagination::bootstrap-5')}}
+            {{ $finishedTrades->links('pagination::bootstrap-5') }}
             <br>
         </div>
 
