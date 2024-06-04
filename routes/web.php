@@ -95,7 +95,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('convert-wallet', [WalletController::class, 'convertwallet']);
 
 
-    //     Route::get('wallet/withdraw-history',[WalletController::class, 'withdrawHistory']);
+    Route::get('withdraw-history', [WalletController::class, 'withdrawHistory']);
 
 
     //     Route::post('profile/verify-document', [UserController::class, 'storeVerificationImage']);

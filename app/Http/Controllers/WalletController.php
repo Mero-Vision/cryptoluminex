@@ -517,8 +517,8 @@ class WalletController extends Controller
     
     public function withdrawHistory(){
 
-        $withdrawRecords=WithdrawRecord::where('client_id',auth()->user()->id)->latest()->paginate(10);
-        return view('wallet.withdraw_history',compact('withdrawRecords'));
+        $withdrawRecords=WithdrawRecord::where('client_id',auth()->user()->id)->latest()->paginate(6);
+        return view('withdraw_history',compact('withdrawRecords'));
         
     }
     

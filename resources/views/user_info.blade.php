@@ -99,7 +99,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{url('withdraw-history')}}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
                            <i class="bi bi-clock-history bx-sm"></i>
                             Withdraw History
