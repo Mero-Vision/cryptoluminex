@@ -8,7 +8,7 @@ class TermConditionsController extends Controller
 {
     public function termsandConditions(){
 
-        return view('term_conditions');
+        return view('terms_conditions');
         
     }
 

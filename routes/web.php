@@ -9,6 +9,7 @@ use App\Http\Controllers\ETHController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MarketController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TermConditionsController;
 use App\Http\Controllers\TradeTransactionController;
 use App\Http\Controllers\USDTController;
 use App\Http\Controllers\UserController;
@@ -35,7 +36,7 @@ Route::get('register', [UserController::class, 'index']);
 // Route::get('reset_password', [ForgotPasswordController::class, 'resetPasswordIndex']);
 // Route::post('reset_password', [ForgotPasswordController::class, 'resetPassword']);
 
-// Route::get('terms-conditions',[TermConditionsController::class, 'termsandConditions']);
+Route::get('terms-conditions',[TermConditionsController::class, 'termsandConditions']);
 // Route::get('privacy-policy', [TermConditionsController::class, 'privacyPolicy']);
 
 
