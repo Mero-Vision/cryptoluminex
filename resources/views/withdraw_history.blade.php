@@ -22,11 +22,16 @@
         @include('layouts.top_nav')
     </div>
 
-    <div class="pt-68 pb-80">
+    <div class="pt-68 pb-8">
         <div class="bg-menuDark tf-container">
             <h5 class="py-3">Withdraw History</h5>
+        </div>
+    </div>
 
-            <ul>
+    <div class="pt-10">
+        <div class="bg-menuDark tf-container">
+
+            <ul class="pt-2">
                 @forelse ($withdrawRecords as $data)
                     <li class="my-2">
                         <div href="" class="coin-item style-1 gap-12 bg-surface">
@@ -54,8 +59,7 @@
 
 
                 @empty
-              <h5 class="text-center p-5">No Withdrawal History Available at This Time</h5>
-
+                    <h5 class="text-center p-5">No Withdrawal History Available at This Time</h5>
                 @endforelse
             </ul><br>
             {{ $withdrawRecords->links('pagination::bootstrap-5') }}
