@@ -24,18 +24,16 @@
     <div class="pt-68 pb-80">
         <div class="bg-menuDark tf-container">
             <div class="pt-12 pb-12 mt-4">
-                <h5><span class="text-primary">My Wallet</span> - <a href="#" class="choose-account"
+                <h5><span class="text-primary">My Wallet</span>
+                     {{-- - <a href="#" class="choose-account"
                         data-bs-toggle="modal" data-bs-target="#accountWallet2"><span class="dom-text">{{ $coin->name }}
                             Wallet </span>
-                        &nbsp;<i class="icon-select-down"></i></a> </h5>
-                <h1 class="mt-16"><a href="#">${{ $clientBalance->dollar_balance }}</a></h1>
+                        &nbsp;<i class="icon-select-down"></i></a> --}}
+                     </h5>
+                <h1 class="mt-16"><a href="#">${{ $clientBalance }}</a></h1>
                 <ul class="mt-16 grid-4 m--16">
                     <li>
-                        <a href="@if ($coin->id == '1') {{ url('wallet/send/usdt') }}
-        @elseif ($coin->id == '2')
-            {{ url('wallet/send/btc') }}
-        @else
-            {{ url('wallet/send/eth') }} @endif"
+                        <a href=""
                             class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center">
                                 <i class="icon icon-way bx-sm"></i>
@@ -45,11 +43,7 @@
 
                     </li>
                     <li>
-                        <a href="@if ($coin->id == '1') {{ url('wallet/receive/usdt') }}
-        @elseif ($coin->id == '2')
-            {{ url('wallet/receive/btc') }}
-        @else
-            {{ url('wallet/receive/eth') }} @endif" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                        <a href="{{url('wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
                                     class="icon icon-way2 bx-sm"></i></span>
                             Receive
@@ -62,11 +56,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="@if ($coin->id == '1') {{ url('wallet/convert/usdt') }}
-        @elseif ($coin->id == '2')
-            {{ url('wallet/convert/btc') }}
-        @else
-            {{ url('wallet/convert/eth') }} @endif" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                        <a href="{{url('wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i class="bi bi-arrow-repeat bx-sm"></i></span>
                             Convert
                         </a>

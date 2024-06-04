@@ -13,20 +13,23 @@ class HomeController extends Controller
 {
     public function home(){
         $wallet=request()->query('wallet');
+
+        // $clientBalance=ClientBalance::where('client_id',auth()->user()->id)
+        // ->when($wallet,function($query)use($wallet){
+        //     if($wallet=="BTC"){
+        //         $query->where('currency_id',2);
+        //     }
+        //     elseif ($wallet == "USDT") {
+        //         $query->where('currency_id', 1);
+        //     } elseif ($wallet == "ETH") {
+        //         $query->where('currency_id', 3);
+        //     }
+        // })->latest()->first();
+        $clientBalance = ClientBalance::where('client_id', auth()->user()->id)
+        ->sum('dollar_balance');
         
-        $clientBalance=ClientBalance::where('client_id',auth()->user()->id)
-        ->when($wallet,function($query)use($wallet){
-            if($wallet=="BTC"){
-                $query->where('currency_id',2);
-            }
-            elseif ($wallet == "USDT") {
-                $query->where('currency_id', 1);
-            } elseif ($wallet == "ETH") {
-                $query->where('currency_id', 3);
-            }
-        })->latest()->first();
-        $coin=CryptoCurrency::where('id',$clientBalance->currency_id)->first();
-        return view('home',compact('clientBalance', 'coin'));
+        // $coin=CryptoCurrency::where('id',$clientBalance->currency_id)->first();
+        return view('home',compact('clientBalance'));
         
     }
 
