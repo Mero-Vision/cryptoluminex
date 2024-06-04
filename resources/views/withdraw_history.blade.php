@@ -60,7 +60,7 @@
 
                 @empty
                     <img class="mx-auto d-block" src="{{ url('assets/img/no-data.png') }}" style="width: 100px;" />
-                    <h5 class="text-center p-2">You have no withdrawal history!</h5>
+                    <p class="text-center p-1">You have no withdrawal history!</p>
                 @endforelse
             </ul><br>
             {{ $withdrawRecords->links('pagination::bootstrap-5') }}
