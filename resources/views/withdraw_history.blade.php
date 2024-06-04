@@ -38,11 +38,11 @@
                                 </div>
                                 <div class="box-price">
                                     <p class="mb-4 text-light">Coin Type: {{ $data->coin_type }}
-</p>
+                                    </p>
                                     {{-- <p class="text-end text-light">Coin:{{ $data->coin }}</p> --}}
                                     <p class="text-end text-light">
                                         Status: {{ $data->status }}
-                                       
+
                                     </p>
                                     </p>
                                 </div>
@@ -54,6 +54,8 @@
 
 
                 @empty
+              <h5 class="text-center p-5">No Withdrawal History Available at This Time</h5>
+
                 @endforelse
             </ul><br>
             {{ $withdrawRecords->links('pagination::bootstrap-5') }}
