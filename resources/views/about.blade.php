@@ -62,14 +62,14 @@
    <div class="bg-menuDark tf-container">
     <div class="pt-12 pb-12 mt-4">
             <h5 class="text-center mt-3">About Us</h5><br>
-            <p class="text-light" style="overflow-y: auto;">Coin Luminexx is a premier crypto trading app, renowned for its reliability and
+            <p class="text-light" style="overflow-y: auto;">Crypto Luminexx is a premier crypto trading app, renowned for its reliability and
                 user-friendly
                 interface. Specializing in the trading of top cryptocurrencies such as Bitcoin (BTC), Ethereum
-                (ETH), and Tether (USDT), Coin Luminexx provides a seamless and efficient trading experience for
+                (ETH), and Tether (USDT), Crypto Luminexx provides a seamless and efficient trading experience for
                 both novice and experienced traders. </p>
             <br>
             <p class="text-light" style="overflow-y: auto;">
-                With over 5,000 trusted clients, Coin Luminexx has established itself as a leading platform in the
+                With over 5,000 trusted clients, Crypto Luminexx has established itself as a leading platform in the
                 crypto trading space. Our app is designed with cutting-edge security features to ensure that your
                 assets are always safe and secure. Real-time market data and advanced trading tools allow users to
                 make informed decisions, maximizing their investment potential.</p>
