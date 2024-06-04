@@ -92,6 +92,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('send-wallet', [WalletController::class, 'sendwallet']);
     Route::get('receive-wallet', [WalletController::class, 'receivewallet']);
+    Route::get('convert-wallet', [WalletController::class, 'convertwallet']);
 
 
     //     Route::get('wallet/withdraw-history',[WalletController::class, 'withdrawHistory']);

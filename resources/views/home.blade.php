@@ -49,18 +49,19 @@
                             Receive
                         </a>
                     </li>
+                     <li>
+                        <a href="{{url('convert-wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                            <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i class="bi bi-arrow-repeat bx-sm"></i></span>
+                            Convert
+                        </a>
+                    </li>
                     <li>
                         <a href="{{url('wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i class="icon icon-wallet bx-sm"></i></span>
                             Wallet
                         </a>
                     </li>
-                    <li>
-                        <a href="{{url('wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
-                            <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i class="bi bi-arrow-repeat bx-sm"></i></span>
-                            Convert
-                        </a>
-                    </li>
+                   
                 </ul>
             </div>
         </div>
