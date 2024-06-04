@@ -104,13 +104,13 @@
                         </a>
                     </li>
 
-                    <li class="mt-3">
+                    {{-- <li class="mt-3">
                         <a href="#"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
                             <i class="bi bi-file-earmark-text bx-sm"></i>
                             Verify Document
                         </a>
-                    </li>
+                    </li> --}}
                     {{-- <li class="mt-3">
                         <a href="{{url('change-password')}}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center text-break text-center">
