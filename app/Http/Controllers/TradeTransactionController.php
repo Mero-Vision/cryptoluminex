@@ -120,7 +120,7 @@ class TradeTransactionController extends Controller
     public function tradeHistory(){
         $finishedTrades = TradeTransaction::where('trade_status', '!=', null)
         
-        ->where('client_id', auth()->user()->id)->latest()->paginate(8);
+        ->where('client_id', auth()->user()->id)->latest()->paginate(6);
         return view('trade_history',compact('finishedTrades'));
     }
 }

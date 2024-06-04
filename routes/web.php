@@ -105,7 +105,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     //     Route::get('online-service',[OnlineServiceController::class,'index']);
 
-    //     Route::get('trade-history',[TradeTransactionController::class, 'tradeHistory']);
+        Route::get('trade-history',[TradeTransactionController::class, 'tradeHistory']);
 
     //     Route::get('my-verification-id',[UserController::class, 'viewVerificationImage']);
 
