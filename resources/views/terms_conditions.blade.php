@@ -24,7 +24,7 @@
 
     <div class="pt-68 pb-8">
         <div class="bg-menuDark tf-container">
-            <h5 class="py-3">Verify Documents</h5>
+            <h5 class="py-3">Terms and Conditions</h5>
         </div>
     </div>
 
@@ -39,7 +39,7 @@
 
                 <h5 class="text-light mt-4" style="font-size: 16px; font-weight: bold;">Taking the plunge</h5>
                 <p class="text-light" style="font-size: 12px; line-height: 1.6; margin-bottom: 20px;">
-                    Thank you for your decision to join Coin Luminexx. Your membership is greatly appreciated. We
+                    Thank you for your decision to join Crypto Luminexx. Your membership is greatly appreciated. We
                     respectfully
                     request that you carefully examine the terms and conditions outlined below, as they dictate the
                     terms of
@@ -94,7 +94,7 @@
                     the well-being of our users.
                 </p>
 
-                <h5 class="text-light mt-4" style="font-size: 16px; font-weight: bold;">User Experience with Coin
+                <h5 class="text-light mt-4" style="font-size: 16px; font-weight: bold;">User Experience with Crypto
                     Luminexx
                 </h5>
 
@@ -132,7 +132,7 @@
                     property
                 </h5>
 
-                <p class="text-light" style="font-size: 12px; line-height: 1.6; margin-bottom: 20px;">Coin Luminexx
+                <p class="text-light" style="font-size: 12px; line-height: 1.6; margin-bottom: 20px;">Crypto Luminexx
                     exclusively
                     owns the intellectual property and content of the platform,
                     including trademarks, logos, graphics, and textual materials. Any reproduction, distribution, or
