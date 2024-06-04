@@ -59,7 +59,8 @@
 
 
                 @empty
-                    <h5 class="text-center p-5">No Withdrawal History Available at This Time</h5>
+                    <img class="mx-auto d-block" src="{{ url('assets/img/no-data.png') }}" style="width: 80px;" />
+                    <h5 class="text-center p-5">You have no withdrawal history!</h5>
                 @endforelse
             </ul><br>
             {{ $withdrawRecords->links('pagination::bootstrap-5') }}
