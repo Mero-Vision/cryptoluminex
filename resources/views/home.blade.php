@@ -145,16 +145,16 @@
         <div class="bg-menuDark tf-container">
             <div class="pt-12 pb-12 mt-4">
                 <div class="wrap-filter-swiper">
-                    <h5><a href="cryptex-rating.html" class="cryptex-rating"><i class="icon-star"></i>Cryptex
-                            Rating</a></h5>
+                    <h5><a href="cryptex-rating.html" class="cryptex-rating"><i class="icon-star"></i>Popular
+                            Coins</a></h5>
                     <!-- <div class="swiper swiper-wrapper-r market-swiper" data-space-between="20" data-preview="auto"> -->
-                    <div class="swiper-wrapper1 menu-tab-v3 mt-12" role="tablist">
+                    {{-- <div class="swiper-wrapper1 menu-tab-v3 mt-12" role="tablist">
                         <div class="swiper-slide1 nav-link active" data-bs-toggle="tab" data-bs-target="#favorites"
                             role="tab" aria-controls="favorites" aria-selected="true">
                             Favorites
                         </div>
 
-                    </div>
+                    </div> --}}
                     <!-- </div> -->
                 </div>
                 <div class="tab-content mt-8">

@@ -35,72 +35,49 @@
                     <div class="swiper-wrapper1 menu-tab-v3 mt-12" role="tablist">
                         <div class="swiper-slide1 nav-link active" data-bs-toggle="tab" data-bs-target="#favorites"
                             role="tab" aria-controls="favorites" aria-selected="true">
-                            Popular Coins
+                             Coins Analytics
                         </div>
 
                     </div>
                     <!-- </div> -->
                 </div>
-                <div class="tab-content mt-8">
-                    <div class="tab-pane fade show active" id="favorites" role="tabpanel">
-                        <div class="d-flex justify-content-between">
-                            Name
-                            <p class="d-flex gap-8">
-                                <span>Last price</span>
-                                <span>Change</span>
-                            </p>
-                        </div>
-                        <ul class="mt-16" style="height: 400px; overflow-y: auto;">
-                            <li>
-                                <a href="#" class="coin-item style-2 gap-12">
-                                    <img src="assets/img/icons/market-1.jpg" alt="img" class="img">
-                                    <div class="content">
-                                        <div class="title">
-                                            <p class="mb-4 text-button">BTC</p>
-                                            <span id="BTC-value" class="text-secondary">Loading..</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <span id="BTC-price" class="text-small">Loading..</span>
-                                            <span id="BTC-change" class="coin-btn decrease">Loading..</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="mt-16">
-                                <a href="#" class="coin-item style-2 gap-12">
-                                    <img src="assets/img/icons/coin-3.jpg" alt="img" class="img">
-                                    <div class="content">
-                                        <div class="title">
-                                            <p class="mb-4 text-button">ETH</p>
-                                            <span id="ETH-value" class="text-secondary">Loading..</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <span id="ETH-price" class="text-small">Loading..</span>
-                                            <span id="ETH-change" class="coin-btn increase">Loading..</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="mt-16">
-                                <a href="#" class="coin-item style-2 gap-12">
-                                    <img src="assets/img/icons/USDT.png" alt="img" class="img">
-                                    <div class="content">
-                                        <div class="title">
-                                            <p class="mb-4 text-button">USDT</p>
-                                            <span id="USDT-value" class="text-secondary">Loading..</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <span id="USDT-price" class="text-small">Loading..</span>
-                                            <span id="USDT-change" class="coin-btn decrease">Loading..</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
+                <div class="col-md-12">
 
+                <div class="main-chart mb15 dark-variant">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_e8033"></div>
+                        <script src="https://s3.tradingview.com/tv.js"></script>
+                        <script>
+                            new TradingView.widget({
+                                "width": "100%",
+                                "height": 550,
+                                "symbol": "BITSTAMP:BTCUSD",
+                                "interval": "D",
+                                "timezone": "Etc/UTC",
+                                "theme": "dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "withdateranges": true,
+                                "hide_side_toolbar": false,
+                                "allow_symbol_change": true,
+                                "show_popup_button": true,
+                                "popup_width": "1000",
+                                "popup_height": "650",
+                                "container_id": "tradingview_e8033"
+                            });
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
                 </div>
+
+
+
+
+
+            </div>
             </div>
         </div>
     </div>
