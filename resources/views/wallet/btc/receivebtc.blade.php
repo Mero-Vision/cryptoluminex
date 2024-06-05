@@ -78,12 +78,12 @@
                         <div class="row mt-3 mb-3">
                             <div class="col">
                                 <div class="text-center icon-container">
-                                    <a href="{{ url('wallet/btc') }}" class="circle-button mb-1">
+                                    <a href="{{ url()->previous() }}" class="circle-button mb-1">
                                         <i class='bx bx-arrow-back bx-sm'></i>
                                     </a>
                                     <br>
 
-                                    <a href="{{ url('wallet/btc') }}" class="text-light">Return Back</a>
+                                    <a href="{{ url()->previous() }}" class="text-light">Return Back</a>
                                 </div>
                             </div>
 
