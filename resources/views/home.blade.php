@@ -25,15 +25,15 @@
         <div class="bg-menuDark tf-container">
             <div class="pt-12 pb-12 mt-4">
                 <h5><span class="text-primary">My Wallet</span>
-                     {{-- - <a href="#" class="choose-account"
+                    {{-- - <a href="#" class="choose-account"
                         data-bs-toggle="modal" data-bs-target="#accountWallet2"><span class="dom-text">{{ $coin->name }}
                             Wallet </span>
                         &nbsp;<i class="icon-select-down"></i></a> --}}
-                     </h5>
+                </h5>
                 <h1 class="mt-16"><a href="#">${{ $clientBalance }}</a></h1>
                 <ul class="mt-16 grid-4 m--16">
                     <li>
-                        <a href="{{url('send-wallet')}}"
+                        <a href="{{ url('send-wallet') }}"
                             class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center">
                                 <i class="icon icon-way bx-sm"></i>
@@ -43,25 +43,30 @@
 
                     </li>
                     <li>
-                        <a href="{{url('receive-wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                        <a href="{{ url('receive-wallet') }}"
+                            class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
                                     class="icon icon-way2 bx-sm"></i></span>
                             Receive
                         </a>
                     </li>
-                     <li>
-                        <a href="{{url('convert-wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
-                            <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i class="bi bi-arrow-repeat bx-sm"></i></span>
+                    <li>
+                        <a href="{{ url('convert-wallet') }}"
+                            class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                            <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
+                                    class="bi bi-arrow-repeat bx-sm"></i></span>
                             Convert
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('wallet')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
-                            <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i class="icon icon-wallet bx-sm"></i></span>
-                            Wallet
+                        <a href="#cryptocurrency" class="tf-list-item d-flex flex-column gap-8 align-items-center"
+                            data-bs-toggle="modal">
+                            <span class="box-round bg-surface d-flex justify-content-center align-items-center"> <i
+                                    class="icon icon-currency"></i></span>
+                            Buy
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
@@ -207,6 +212,53 @@
                                     </div>
                                 </a>
                             </li>
+                            <li class="mt-16">
+                                <a href="#" class="coin-item style-2 gap-12">
+                                    <img src="assets/img/icons/binance.png" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-button">BNB</p>
+                                            <span id="BNB-value" class="text-secondary">Loading..</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-12">
+                                            <span id="BNB-price" class="text-small">Loading..</span>
+                                            <span id="BNB-change" class="coin-btn decrease">Loading..</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li class="mt-16">
+                                <a href="#" class="coin-item style-2 gap-12">
+                                    <img src="assets/img/icons/XRP.png" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-button">XRP</p>
+                                            <span id="XRP-value" class="text-secondary">Loading..</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-12">
+                                            <span id="XRP-price" class="text-small">Loading..</span>
+                                            <span id="XRP-change" class="coin-btn decrease">Loading..</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-16">
+                                <a href="#" class="coin-item style-2 gap-12">
+                                    <img src="assets/img/icons/SOL.png" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-button">SOL</p>
+                                            <span id="SOL-value" class="text-secondary">Loading..</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-12">
+                                            <span id="SOL-price" class="text-small">Loading..</span>
+                                            <span id="SOL-change" class="coin-btn decrease">Loading..</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
                         </ul>
                     </div>
 
@@ -347,7 +399,111 @@
 
 
 
+    <!--cryptocurrency -->
+    <div class="modal fade modalRight" id="cryptocurrency">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="header fixed-top bg-surface d-flex justify-content-center align-items-center">
+                    <span class="left" data-bs-dismiss="modal" aria-hidden="true"><i
+                            class="icon-left-btn"></i></span>
+                    <h3>Buy cryptocurrency</h3>
+                </div>
+                <div class="overflow-auto pt-45 pb-16">
+                    <div class="tf-container">
+                        {{-- <div class="mt-8 search-box box-input-field">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search cryptocurrency" required class="clear-ip">
+                            <i class="icon-close"></i>
+                        </div>
+                        <h5 class="mt-12">Popular search</h5> --}}
+                        <br>
+                        <ul class="mt-42">
+                            <li>
+                                <a href="https://global.transak.com/" target="_blank"
+                                    class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/transak.png') }}" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-large">Transak Wallet</p>
+                                            {{-- <span class="text-secondary text-small">ETH</span> --}}
+                                        </div>
+                                        <span class="text-small">Visit</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-16">
+                                <a href="https://my.mercuryo.io/login/email" target="_blank"
+                                    class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/mercuryo.png') }}" alt="img"
+                                        class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-large">Mercuryo Wallet</p>
+                                            {{-- <span class="text-secondary text-small">BTC</span> --}}
+                                        </div>
+                                        <span class="text-small">Visit</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-16">
+                                <a href="https://ramp.network/buy#" target="_blank" class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/ramp.png') }}" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-large">Ramp Wallet</p>
+                                            {{-- <span class="text-secondary text-small">USDT</span> --}}
+                                        </div>
+                                        <span class="text-small">Visit</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-16">
+                                <a href="https://buy.simplex.com/" target="_blank" class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/simplex.png') }}" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-large">Simplex Wallet</p>
+                                            {{-- <span class="text-secondary text-small">BNB</span> --}}
+                                        </div>
+                                        <span class="text-small">Visit</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-16">
+                                <a href="https://www.moonpay.com/en-gb/buy?source=homepage" target="_blank"
+                                    class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/moonpay.png') }}" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-large">MoonPay Wallet</p>
+                                            {{-- <span class="text-secondary text-small">XRP</span> --}}
+                                        </div>
+                                        <span class="text-small">Visit</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mt-16">
+                                <a href="https://banxa.com/" target="_blank" class="coin-item style-2 gap-12">
+                                    <img src="{{ url('assets/img/buy/banxa.png') }}" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <p class="mb-4 text-large">Banxa Wallet</p>
+                                            {{-- <span class="text-secondary text-small">ADA</span> --}}
+                                        </div>
+                                        <span class="text-small">Visit</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
 
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -393,7 +549,7 @@
         updateCryptoPrices();
     </script>
 
-    <script>
+     <script>
         async function fetchCoinData() {
             try {
                 const response = await fetch('https://api.coincap.io/v2/assets');
@@ -408,7 +564,10 @@
             const coinMap = {
                 'bitcoin': 'BTC',
                 'ethereum': 'ETH',
-                'tether': 'USDT'
+                'tether': 'USDT',
+                'binance-coin': 'BNB',
+                'xrp': 'XRP',
+                'solana': 'SOL' // Added SOL to the map
             };
 
             coins.forEach(coin => {

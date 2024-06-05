@@ -96,51 +96,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="mt-16">
-                                <a href="#" class="coin-item style-2 gap-12">
-                                    <img src="assets/img/icons/binance.png" alt="img" class="img">
-                                    <div class="content">
-                                        <div class="title">
-                                            <p class="mb-4 text-button">BNB</p>
-                                            <span id="BNB-value" class="text-secondary">Loading..</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <span id="BNB-price" class="text-small">Loading..</span>
-                                            <span id="BNB-change" class="coin-btn decrease">Loading..</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="mt-16">
-                                <a href="#" class="coin-item style-2 gap-12">
-                                    <img src="assets/img/icons/XRP.png" alt="img" class="img">
-                                    <div class="content">
-                                        <div class="title">
-                                            <p class="mb-4 text-button">XRP</p>
-                                            <span id="XRP-value" class="text-secondary">Loading..</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <span id="XRP-price" class="text-small">Loading..</span>
-                                            <span id="XRP-change" class="coin-btn decrease">Loading..</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="mt-16">
-                                <a href="#" class="coin-item style-2 gap-12">
-                                    <img src="assets/img/icons/SOL.png" alt="img" class="img">
-                                    <div class="content">
-                                        <div class="title">
-                                            <p class="mb-4 text-button">SOL</p>
-                                            <span id="SOL-value" class="text-secondary">Loading..</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <span id="SOL-price" class="text-small">Loading..</span>
-                                            <span id="SOL-change" class="coin-btn decrease">Loading..</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            
                         </ul>
                     </div>
 
