@@ -32,6 +32,6 @@
 
         <p>If you didn't create an account, no further action is required.</p>
 
-        <p style="margin-top: 20px;">Best regards,<br>{{ $company->business_name }}</p>
+        <p style="margin-top: 20px;">Best regards,<br>Crypto Luminex</p>
     </div>
 </x-mail::message>
