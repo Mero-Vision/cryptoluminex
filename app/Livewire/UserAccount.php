@@ -2,10 +2,13 @@
 
 namespace App\Livewire;
 
+use App\Mail\UserVerificationMail;
 use App\Models\ClientBalance;
 use App\Models\CryptoCurrency;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
@@ -58,7 +61,15 @@ class UserAccount extends Component
 
             ]);
         }
+        $token = Str::random(60);
+
+        DB::table('password_resets')->insert([
+            'email' => $this->email,
+            'token' => $token,
+            'created_at' => now(),
+        ]);
         Auth::login($client);
+        Mail::to($this->email)->send(new UserVerificationMail($client,$token));
 
         sweetalert()->addSuccess('Your account has been created successfully! Please login!');
         return $this->redirect('/');
