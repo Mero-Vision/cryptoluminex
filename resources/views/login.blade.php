@@ -34,7 +34,7 @@
     <div class="pt-45 pb-20">
         <div class="tf-container">
             <div class="mt-32">
-                <h2 class="text-center">Login Coinluminexx</h2>
+                <h2 class="text-center">Login Crypto Luminex</h2>
             </div>
             <div class="auth-line mt-12">Login</div>
             <form action="{{ url('login') }}" method="post" class="mt-16">

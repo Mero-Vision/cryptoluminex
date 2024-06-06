@@ -1,6 +1,6 @@
 <div>
     <form wire:submit="save" class="mt-32 mb-16">
-        <h2 class="text-center">Register Coinluminexx</h2>
+        <h2 class="text-center">Register Crypto Luminex</h2>
         <fieldset class="mt-40">
             <label class="label-ip">
                 <p class="mb-8 text-small">Name</p>
