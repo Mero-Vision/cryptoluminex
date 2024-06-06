@@ -29,7 +29,7 @@ class UserVerificationMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'User Verification Mail',
+            subject: 'Crypto Luminex',
         );
     }
 
