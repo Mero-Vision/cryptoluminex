@@ -6,7 +6,7 @@
                     <div class="content">
                         <div class="title">
                             <p class="mb-4 text-large text-light">Purchase Amount: ${{ $data->purchase_amount }} USD</p>
-                            <span class="text-light">Purchase Price: ${{ $data->purchase_price }} USD</span>
+                            <span class="text-light">Trade Time: {{ date('M d, Y H:i:s', strtotime($data->created_at)) }}</span>
                         </div>
                         <div class="box-price">
                             <p class="text-small mb-4 text-light">Trade Type:
@@ -19,7 +19,13 @@
                                 </span>
                             </p>
                             {{-- <p class="text-end text-light">Coin:{{ $data->coin }}</p> --}}
-                            <p class="text-end text-light">Time Spent: {{ $data->created_at->diffForHumans() }}</p>
+                            <p class="text-end text-light">
+                                Status:
+                                <span
+                                    class="@if ($data->trade_status == 'loss') badge bg-danger rounded text-light @elseif ($data->trade_status == 'profit') badge bg-success rounded text-light @endif">
+                                    {{ $data->trade_status }}
+                                </span>
+                            </p>
                         </div>
                     </div>
                 </div>

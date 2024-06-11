@@ -34,7 +34,8 @@
                                 <div class="title">
                                     <p class="mb-4 text-light">Purchase Amount: ${{ $data->purchase_amount }}
                                         USD</p>
-                                    <span class="text-light">Purchase Price: ${{ $data->purchase_price }} USD</span>
+                                    {{-- <span class="text-light">Purchase Price: ${{ $data->purchase_price }} USD</span> --}}
+                                    <span class="text-light">Trade Time: {{ date('M d, Y H:i:s', strtotime($data->created_at)) }}</span>
                                 </div>
                                 <div class="box-price">
                                     <p class=" mb-4 text-light">Trade Type:

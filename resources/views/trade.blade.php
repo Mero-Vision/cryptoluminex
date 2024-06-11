@@ -149,8 +149,8 @@
 
 
                     if (!isNaN(currentCoinValue)) {
-                        const roundedCoinValue = currentCoinValue.toFixed(4);
-                        const clientBalance = parseFloat(data.clientBalance).toFixed(4);
+                        const roundedCoinValue = currentCoinValue.toFixed(2);
+                        const clientBalance = parseFloat(data.clientBalance).toFixed(2);
 
 
                         $('#purchasePrice').val(roundedCoinValue);
