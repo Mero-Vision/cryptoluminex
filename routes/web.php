@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BitCoinController;
 use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\ClientRechargeController;
+use App\Http\Controllers\DeliveryReportController;
 use App\Http\Controllers\ETHController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MarketController;
@@ -36,7 +37,7 @@ Route::get('register', [UserController::class, 'index']);
 // Route::get('reset_password', [ForgotPasswordController::class, 'resetPasswordIndex']);
 // Route::post('reset_password', [ForgotPasswordController::class, 'resetPassword']);
 
-Route::get('terms-conditions',[TermConditionsController::class, 'termsandConditions']);
+Route::get('terms-conditions', [TermConditionsController::class, 'termsandConditions']);
 // Route::get('privacy-policy', [TermConditionsController::class, 'privacyPolicy']);
 
 
@@ -109,7 +110,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::post('trade-transaction', [TradeTransactionController::class, 'store']);
 
-    //     Route::get('delivery-report',[DeliveryReportController::class,'index']);
+    Route::get('delivery-report', [DeliveryReportController::class, 'index']);
 
     //     Route::get('online-service',[OnlineServiceController::class,'index']);
 

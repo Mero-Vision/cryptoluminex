@@ -14,6 +14,6 @@ class DeliveryReportController extends Controller
 
     
         
-        return view('trade.delivery_report',compact('trades'));
+       return view('delivery_report');
     }
 }
