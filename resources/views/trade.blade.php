@@ -19,7 +19,7 @@
 
 
     <div class="header-style2 fixed-top bg-menuDark">
-         @include('layouts.top_nav')
+        @include('layouts.top_nav')
     </div>
 
     <x-device desktop="true">
@@ -57,42 +57,41 @@
                 <div class="tab-content pt-16 pb-16">
                     <div class="tab-pane fade active show" id="history" role="tabpanel">
 
-                        <div href="" class="">
+                        <div class="row sm-gutters">
+                            <div class="col-md-12" style="background-color: #2d3136;">
 
-                            <div class="row sm-gutters">
-                                <div class="col-md-12" style="background-color: #2d3136;">
-
-                                    @livewire('trade-transaction-component')
-
-
-                                </div>
+                                @livewire('trade-transaction-component')
 
 
                             </div>
 
 
-
                         </div>
+
+
+
 
                     </div>
                     <div class="tab-pane fade" id="market" role="tabpanel">
-                        <ul>
-                           @livewire('delivery-waiting-component')
-                        </ul>
+
+                   
+
+                            @livewire('delivery-waiting-component')
+                    
                     </div>
                 </div>
             </div>
         </div>
     </x-device>
 
-    
+
     <x-device phone="true" tablet="true">
         <div class="pt-68 pb-8">
             <div class="bg-menuDark tf-container">
                 <div class="row sm-gutters">
                     <div class="col-md-12">
 
-                      @livewire('trade-transaction-component')
+                        @livewire('trade-transaction-component')
 
 
                     </div>
@@ -130,13 +129,13 @@
 
 
     <script src="//unpkg.com/layui@2.9.10/dist/layui.js"></script>
-    <script src="{{ url('assets/js/jquery-3.4.1.min.js') }}"></script>
+    {{-- <script src="{{ url('assets/js/jquery-3.4.1.min.js') }}"></script> --}}
     @include('layouts.footer')
-    <script>
+    {{-- <script>
         $('tbody, .market-news ul').mCustomScrollbar({
             theme: 'minimal',
         });
-    </script>
+    </script> --}}
 
     <script>
         function updateCoinValue() {

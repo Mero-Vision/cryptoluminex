@@ -1,8 +1,6 @@
 <div id="tradeFormContainer"
     style="width: 100%; padding: 20px; border-radius: 10px;  color: white; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow-y: auto;">
 
-
-
     <form action="{{ url('trade-transaction') }}" method="POST" style="width: 100%; color: white;">
         @csrf
         <style>
@@ -109,6 +107,7 @@
                     </select>
                 </div>
             </div>
+
             <div class="col-md-6 col-sm-6 layui-form" wire:ignore style="margin-bottom: 10px;">
                 <p style="font-weight: bold; margin-bottom: 0px;">Trade Type</p>
                 <div class="input-group" style="padding-top: 10px; display: flex; flex-wrap: nowrap;">
@@ -205,29 +204,29 @@
                 </div>
 
             </div>
+        </div>
 
-            <input type="hidden" wire:model="availabe_balance" id="availableBalance" name="available_balance" />
-            <p style="font-weight: bold; margin-top: 20px;">Available: <span id="convertedBalance"
-                    style="color: white;">
-                    @if ($clientBalance)
-                        {{ $clientBalance->balance }}
-                    @else
-                        0.00000
-                    @endif
-                </span>
-            </p>
+        <input type="hidden" wire:model="availabe_balance" id="availableBalance" name="available_balance" />
+        <p style="font-weight: bold; margin-top: 20px;">Available: <span id="convertedBalance" style="color: white;">
+                @if ($clientBalance)
+                    {{ $clientBalance->balance }}
+                @else
+                    0.00000
+                @endif
+            </span>
+        </p>
 
-            <div class="button-container" style="text-align: center; margin-top: 5px;">
-                <button type="submit" class="btn btn-primary" id="tradeButton"
-                    style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #2980b9; color: white; cursor: pointer;">Trade</button>
-                <div class="text-center icon-container mx-1" style="display: inline-block; margin-left: 10px;">
-                    {{-- <a href="{{ url('delivery-report') }}" class="circle-button" style="text-decoration: none;">
+        <div class="button-container" style="text-align: center; margin-top: 5px;">
+            <button type="submit" class="btn btn-primary" id="tradeButton"
+                style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #2980b9; color: white; cursor: pointer;">Trade</button>
+            <div class="text-center icon-container mx-1" style="display: inline-block; margin-left: 10px;">
+                <a href="{{ url('delivery-report') }}" class="circle-button" style="text-decoration: none;">
                     <i class='bx bxs-report bx-sm' style="font-size: 24px; color: #2980b9;"></i>
-                </a> --}}
-                </div>
+                </a>
             </div>
+        </div>
     </form>
-    <script>
+    {{-- <script>
         function adjustFormHeight() {
             const formContainer = document.getElementById('tradeFormContainer');
             const footer = document.querySelector('.menubar-footer');
@@ -237,5 +236,5 @@
 
         window.addEventListener('resize', adjustFormHeight);
         window.addEventListener('load', adjustFormHeight);
-    </script>
+    </script> --}}
 </div>
