@@ -5,7 +5,14 @@
                 <div href="" class="coin-item style-1 gap-12 bg-surface">
                     <div class="content">
                         <div class="title">
-                            <p class="mb-4 text-large text-light">Purchase Amount: ${{ $data->purchase_amount }} USD</p>
+                            <p class="mb-4 text-light">Purchase Amount: ${{ $data->purchase_amount }} USD</p>
+                           <p class="text-light">Profit/Loss Amount: <span class="{{ $data->trade_status == 'profit' ? 'text-success' : ($data->trade_status == 'loss' ? 'text-danger' : '') }}">
+                        @if ($data->trade_status == 'profit')
+                            +${{ $data->profit_loss }}
+                        @elseif($data->trade_status == 'loss')
+                            -${{ $data->profit_loss }}
+                        @endif</span></p>
+
                             <span class="text-light">Trade Time: {{ date('M d, Y H:i:s', strtotime($data->created_at)) }}</span>
                         </div>
                         <div class="box-price">
