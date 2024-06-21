@@ -181,7 +181,7 @@
         $('#coinSelector').change(function() {
             updateCoinValue();
         });
-        setInterval(updateCoinValue, 4000);
+        // setInterval(updateCoinValue, 4000);
     </script>
 
 
