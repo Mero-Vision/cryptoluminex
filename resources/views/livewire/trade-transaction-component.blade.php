@@ -61,7 +61,7 @@
                 style="flex: 1; padding: 10px; border-radius: 5px 0 0 5px; border: 1px solid #ccc; background-color: #2D3136; color: white; height: 40px;" />
             <div
                 style="display: inline-block; padding: 10px; border: 1px solid #ccc; border-radius: 0 5px 5px 0; background-color: #34495e; color: white; height: 40px;">
-                <span id="coinLabel2">USDT</span>
+                <span id="coinLabel2">Loading..</span>
             </div>
         </div>
         @error('purchase_price')
