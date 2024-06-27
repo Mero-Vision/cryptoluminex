@@ -17,6 +17,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Crypto Luminex'),
+    'Chatify' => Chatify\Facades\ChatifyMessenger::class,
 
     /*
     |--------------------------------------------------------------------------
