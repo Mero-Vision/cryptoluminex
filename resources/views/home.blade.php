@@ -545,7 +545,7 @@
             });
         }
 
-        setInterval(updateCryptoPrices, 1000);
+        // setInterval(updateCryptoPrices, 1000);
         updateCryptoPrices();
     </script>
 
@@ -593,7 +593,7 @@
             updateCoinData(coins);
         }
 
-        setInterval(updatePrices, 1000);
+        // setInterval(updatePrices, 1000);
     </script>
 
 </body>
