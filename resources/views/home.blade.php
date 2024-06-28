@@ -593,7 +593,7 @@
             updateCoinData(coins);
         }
 
-        setInterval(updatePrices, 2000);
+        setInterval(updatePrices, 1000);
     </script>
 
 </body>
