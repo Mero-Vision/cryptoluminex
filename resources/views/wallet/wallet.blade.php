@@ -534,7 +534,7 @@
         }
 
 
-        setInterval(updateUSDBalance, 1000);
+        // setInterval(updateUSDBalance, 1000);
 
 
         updateUSDBalance();
@@ -569,7 +569,7 @@
         }
 
 
-        setInterval(updateUSDBtcBalance, 1000);
+        // setInterval(updateUSDBtcBalance, 1000);
 
 
         updateUSDBtcBalance();
@@ -605,7 +605,7 @@
         }
 
 
-        setInterval(updateUSDEtcBalance, 1000);
+        // setInterval(updateUSDEtcBalance, 1000);
 
 
         updateUSDEtcBalance();
