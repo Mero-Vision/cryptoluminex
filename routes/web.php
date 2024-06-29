@@ -26,6 +26,14 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/currency/quotation', [HomeController::class, 'getQuotationData']);
 
+Route::get('/check-timezone', function () {
+    return response()->json([
+        'config_timezone' => config('app.timezone'),
+        'default_timezone' => date_default_timezone_get(),
+        'current_time' => now()->toDateTimeString(),
+    ]);
+});
+
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 // Route::get('logout', [AuthController::class, 'logout']);
