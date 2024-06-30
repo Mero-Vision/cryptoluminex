@@ -74,7 +74,7 @@
                 </fieldset>
                 <a href="reset-pass.html" class="text-secondary">Forgot Password?</a>
                 <button class="mt-20">Login</button>
-                <p class="mt-20 text-center text-small">Already have a Account? &ensp;<a href="{{url('register')}}">Sign
+                <p class="mt-20 text-center text-small">Already have an Account? &ensp;<a href="{{url('register')}}">Sign
                         up</a></p>
             </form>
         </div>
