@@ -37,7 +37,10 @@
                     <div class="info">
                         <h5>{{ Auth()->user()->name }}</h5>
                         <p class="text-small text-secondary mt-8 mb-8">Profile and settings</p>
-                        @if ($verifyEmail->verification_status == 'unverified')
+                        <span class="avatar-label tag-xs style-2 round-2 bg-success text-light" style="color: white;">
+                            Verified <i class='bx bxs-badge-check'></i>
+                        </span>
+                        {{-- @if ($verifyEmail->verification_status == 'unverified')
                             <span class="avatar-label tag-xs style-2 round-2 red text-light" style="color: white;">
                                Unverified
                                 <i class="bi bi-patch-question-fill"></i>
@@ -47,7 +50,7 @@
                                 style="color: white;">
                                 Verified <i class='bx bxs-badge-check'></i>
                             </span>
-                        @endif
+                        @endif --}}
 
                     </div>
                 </div>
@@ -202,8 +205,7 @@
                             </li>
                             <li class="mt-16">
                                 <a href="https://buy.simplex.com/" target="_blank" class="coin-item style-2 gap-12">
-                                    <img src="{{ url('assets/img/buy/simplex.png') }}" alt="img"
-                                        class="img">
+                                    <img src="{{ url('assets/img/buy/simplex.png') }}" alt="img" class="img">
                                     <div class="content">
                                         <div class="title">
                                             <p class="mb-4 text-large">Simplex Wallet</p>

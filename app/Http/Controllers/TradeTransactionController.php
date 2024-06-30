@@ -20,11 +20,11 @@ class TradeTransactionController extends Controller
     {
         
         $user = Auth::user();
-        $documentVerification= User::where('id', $user->id)->first();
-        if($documentVerification->verification_status=='unverified'){
-            sweetalert()->addWarning('Document is not verified');
-            return back();
-        }
+        // $documentVerification= User::where('id', $user->id)->first();
+        // if($documentVerification->verification_status=='unverified'){
+        //     sweetalert()->addWarning('Document is not verified');
+        //     return back();
+        // }
 
         
         if ($request->purchase_amount > $request->available_balance) {
