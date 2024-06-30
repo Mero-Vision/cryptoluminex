@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="stats mt-3">
-                        <span class="text-light">Bitcoin Wallet Address</span>
+                        <span class="text-light">Ethereum Wallet Address</span>
 
                         <div class="input-group mb-3 mt-1">
                             <input id="walletAddress" type="text" class="clear-ip value_input ip-style2"
