@@ -18,6 +18,17 @@
     <link rel="apple-touch-icon-precomposed" href="{{ url('assets/img/logo.png') }}" />
 
     <title>Crypto Luminexx | Login</title>
+      <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "1c4f9b8a-c62c-499c-aee1-94b7ad2512e8";
+      (function() {
+          d = document;
+          s = d.createElement("script");
+          s.src = "https://client.crisp.chat/l.js";
+          s.async = 1;
+          d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+  </script>
 </head>
 
 <body>
