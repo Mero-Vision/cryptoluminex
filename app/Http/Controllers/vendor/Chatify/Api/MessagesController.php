@@ -1,6 +1,6 @@
 <?php
 
-namespace Chatify\Http\Controllers\Api;
+namespace App\Http\Controllers\vendor\Chatify;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -276,6 +276,7 @@ class MessagesController extends Controller
     {
         $input = trim(filter_var($request['input']));
         $records = User::where('id','!=',Auth::user()->id)
+            ->where('status', 'super-admin')
                     ->where('name', 'LIKE', "%{$input}%")
                     ->paginate($request->per_page ?? $this->perPage);
 

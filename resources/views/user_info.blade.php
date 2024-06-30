@@ -135,12 +135,12 @@
                             About Us
                         </a>
                     </li>
-                    {{-- <li>
-                        <a href="#" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+                    <li>
+                        <a href="{{url('service-center')}}" class="tf-list-item d-flex flex-column gap-8 align-items-center">
                             <i class="icon icon-headset"></i>
-                            Support
+                            Service Center
                         </a>
-                    </li> --}}
+                    </li>
 
                 </ul>
             </div>
